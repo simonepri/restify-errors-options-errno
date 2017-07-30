@@ -1,0 +1,44 @@
+{
+  "name": "restify-errors-options-errno",
+  "version": "0.1.0",
+  "description": "Add errno to Restify's errors",
+  "main": "index.js",
+  "dependencies": {
+    "restify-errors-options": "^0.1.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "codecov": "^2.2.0",
+    "nyc": "^11.0.3",
+    "xo": "*"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage/coverage.lcov && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simonepri/restify-errors-options-errno.git"
+  },
+  "author": {
+    "name": "Simone Primarosa",
+    "email": "simone.pri@hotmail.it"
+  },
+  "keywords": [
+    "restify-errors-options-errno",
+    "restify errors options errno",
+    "restify-errno",
+    "restify errno"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simonepri/restify-errors-options-errno/issues"
+  },
+  "homepage": "https://github.com/simonepri/restify-errors-options-errno#readme",
+  "xo": {
+    "space": true
+  }
+}
