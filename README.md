@@ -2,6 +2,8 @@
 [![Travis CI](https://travis-ci.org/simonepri/restify-errors-options-errno.svg?branch=master)](https://travis-ci.org/simonepri/restify-errors-options-errno) [![Codecov](https://img.shields.io/codecov/c/github/simonepri/restify-errors-options-errno/master.svg)](https://codecov.io/gh/simonepri/restify-errors-options-errno) [![npm](https://img.shields.io/npm/dm/restify-errors-options-errno.svg)](https://www.npmjs.com/package/restify-errors-options-errno) [![npm version](https://img.shields.io/npm/v/restify-errors-options-errno.svg)](https://www.npmjs.com/package/restify-errors-options-errno) [![npm dependencies](https://david-dm.org/simonepri/restify-errors-options-errno.svg)](https://david-dm.org/simonepri/restify-errors-options-errno) [![npm dev dependencies](https://david-dm.org/simonepri/restify-errors-options-errno/dev-status.svg)](https://david-dm.org/simonepri/restify-errors-options-errno#info=devDependencies)
 > 🐛 Add errno to Restify's errors!
 
+Based on [restify-errors-options](https://github.com/simonepri/restify-errors-options)
+
 
 ## Install
 
