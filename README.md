@@ -11,7 +11,7 @@ $ npm install --save restify-errors-options-errno
 
 ## Usage
 ```js
-require('restify-errors-options-errno');
+require('restify-errors-options-errno').install();
 // Is extremely important to require restify-errors-options-errno before restify.
 const restify = require('restify');
 

@@ -1,12 +1,20 @@
 import test from 'ava';
 
-import '.'; // eslint-disable-line import/no-unassigned-import, import/order
+import m from '.'; // eslint-disable-line import/order
 
-import restify from 'restify'; // eslint-disable-line import/order
-import restifyErrors from 'restify-errors'; // eslint-disable-line import/order
-import restifyClients from 'restify-clients'; // eslint-disable-line import/order
+import restify from 'restify';
+import restifyErrors from 'restify-errors';
+import restifyClients from 'restify-clients';
 
 let PORT = 6543;
+
+test.before(() => {
+  m.install();
+});
+
+test.after(() => {
+  m.uninstall();
+});
 
 test.cb.beforeEach(t => {
   t.context.port = PORT++;
