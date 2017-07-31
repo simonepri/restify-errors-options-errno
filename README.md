@@ -11,10 +11,11 @@ $ npm install --save restify-errors-options-errno
 
 ## Usage
 ```js
-require('restify-errors-options-errno').install();
+const restifyErrorOtionsErrno = require('restify-errors-options-errno');
 // Is extremely important to require restify-errors-options-errno before restify.
 const restify = require('restify');
 
+restifyErrorOtionsErrno.install();
 var server = restify.createServer();
 
 server.on('MethodNotAllowed', (req, res, err, cb) => {
