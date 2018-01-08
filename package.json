@@ -8,12 +8,12 @@
   },
   "devDependencies": {
     "ava": "*",
-    "codecov": "^2.2.0",
+    "codecov": "^3.0.0",
     "nyc": "^11.0.3",
     "pify": "^3.0.0",
-    "restify": "^5.0.1",
+    "restify": "^6.3.4",
     "restify-clients": "^1.5.0",
-    "restify-errors": "^4.3.0",
+    "restify-errors": "^5.0.0",
     "xo": "*"
   },
   "engines": {
