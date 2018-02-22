@@ -2,47 +2,61 @@
   "name": "restify-errors-options-errno",
   "version": "0.1.1",
   "description": "Add errno to Restify's errors",
-  "main": "index.js",
-  "dependencies": {
-    "restify-errors-options": "^0.3.0"
+  "license": "MIT",
+  "homepage": "https://github.com/simonepri/restify-errors-options-errno#readme",
+  "repository": "github:simonepri/restify-errors-options-errno",
+  "bugs": {
+    "url": "https://github.com/simonepri/restify-errors-options-errno/issues",
+    "email": "simonepri@outlook.com"
   },
-  "devDependencies": {
-    "ava": "*",
-    "codecov": "^2.2.0",
-    "nyc": "^11.0.3",
-    "pify": "^3.0.0",
-    "restify": "^5.0.1",
-    "restify-clients": "^1.5.0",
-    "restify-errors": "^4.3.0",
-    "xo": "*"
-  },
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava",
-    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage/coverage.lcov && codecov"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/simonepri/restify-errors-options-errno.git"
-  },
-  "author": {
-    "name": "Simone Primarosa",
-    "email": "simone.pri@hotmail.it"
-  },
+  "author": "Simone Primarosa <simonepri@outlook.com> (https://simoneprimarosa.com)",
+  "contributors": [
+    "Simone Primarosa <simonepri@outlook.com> (https://simoneprimarosa.com)"
+  ],
   "keywords": [
     "restify-errors-options-errno",
     "restify errors options errno",
     "restify-errno",
     "restify errno"
   ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/simonepri/restify-errors-options-errno/issues"
+  "main": "index.js",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "package.json",
+    "index.js"
+  ],
+  "engines": {
+    "node": ">=4"
   },
-  "homepage": "https://github.com/simonepri/restify-errors-options-errno#readme",
+  "scripts": {
+    "test": "xo&& nyc ava",
+    "release": "np",
+    "update": "npm-check -u"
+  },
+  "dependencies": {
+    "restify-errors-options": "^0.3.0"
+  },
+  "devDependencies": {
+    "ava": "*",
+    "nyc": "*",
+    "pify": "^3.0.0",
+    "restify": "^5.0.1",
+    "restify-clients": "^1.5.0",
+    "restify-errors": "^4.3.0",
+    "xo": "*"
+  },
+  "ava": {
+    "verbose": true
+  },
+  "nyc": {
+    "reporter": [
+      "lcovonly",
+      "text"
+    ]
+  },
   "xo": {
+    "prettier": true,
     "space": true
   }
 }
