@@ -6,7 +6,12 @@ function install() {
   errorsOptions.add('errno', defaultErrno);
 
   function defaultErrno(code) {
-    return code.split('').filter(c => c === c.toUpperCase()).join('') + 'E';
+    return (
+      code
+        .split('')
+        .filter(c => c === c.toUpperCase())
+        .join('') + 'E'
+    );
   }
 }
 
@@ -16,5 +21,5 @@ function uninstall() {
 
 module.exports = {
   install,
-  uninstall
+  uninstall,
 };
