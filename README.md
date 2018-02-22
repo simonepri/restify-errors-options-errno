@@ -4,6 +4,9 @@
 
 Based on [restify-errors-options](https://github.com/simonepri/restify-errors-options)
 
+<hr>
+<p align="center"><strong>DEPRECATED!!!</strong></p>
+<hr>
 
 ## Install
 
